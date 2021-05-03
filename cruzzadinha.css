@@ -1,0 +1,167 @@
+body {
+    margin: auto;
+    height: 100vh;
+    background-color: #2c3e50;
+}
+
+#topo {
+    font-size: 22px;
+    background-color: #1abc9c;
+    margin: auto;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 10%;
+    border-radius: 2%;
+}
+h2 {
+    margin: 0;
+}
+/* input{
+    text-transform:uppercase;
+} */
+button#bt_comecar {
+    width: 20%;
+    height: 40%;
+    font-size: 16px;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+}
+#bt_finalizar {
+    display: none;
+    width: 20%;
+    height: 40%;
+    font-size: 16px;
+    margin: auto;
+    border-radius: 15px;
+}
+/* TOPO -- FIM */
+
+/* CONTEUDO */
+#banner {
+    width: 50%;
+    margin: auto;
+    height: 500px;
+    background-color: black;
+    border-radius: 3%;
+    box-shadow: 15px 15px #212e3b;
+}
+#conteudo1 {
+    display: none;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+
+}
+
+#intro {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+#conteudo{
+    height: 60%;
+    width: 100%;
+    display: none;
+
+}
+#jogo {
+    width: 550px;
+    height: 520px;
+    background-color: #1abc9c;
+    float: left;
+    position: flex;
+    border-radius: 1%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+input[type=text]{
+    width: 168px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+    margin-left: 40%;
+    margin-right: 30%;
+}
+#bt_resposta{
+    background-color: #1abc9c;
+    height: 40px;
+    width: 180px;
+    margin-left: 40%;
+    margin-right: 30%;
+    border-radius: 15px;
+    font-size: 16px;
+}
+.numeracao{
+    color: #1abc9c;
+}
+#questoes{
+    display: none;
+}
+
+/* COLUNAS E LINHAS CRUZADINHAS */
+#vaz{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 10px;
+    color: black;
+}
+td {
+    border: 1px solid black;
+    width: 28px;
+    height: 20px;
+    font-size: 16px;
+    color: #212e3b;
+    text-align: center;
+    cursor: initial;
+}
+h3{
+    margin: 10 0 0 0;
+    font-size: 16px;
+}
+/* CPU */
+#cpu1{display : none;}  #cpu2{display : none;}  #cpu3{display : none;}
+/* ULA */
+#ula1{display : none;}  #ula2{display : none;}  #ula3{display : none;}
+/* Registradores */
+#reg1{display : none;}  #reg2{display : none;}  #reg3{display : none;}  #reg4{display : none;}  #reg5{display : none;}
+#reg6{display : none;}  #reg7{display : none;}  #reg9{display : none;}  #reg10{display : none;}
+#reg11{display : none;}  #reg12{display : none;}  #reg13{display : none;}
+/* RAM  */
+#ram2{display : none;}  #ram3{display : none;}
+/* ROM */
+#rom1{display : none;}  #rom2{display : none;}  #rom3{display : none;}
+/* EPROM */
+#ep2{display : none;}  #ep3{display : none;}  #ep4{display : none;}  #ep5{display : none;}
+/* FLASH */
+#flash1{display : none;}  #flash2{display : none;}  #flash3{display : none;}  #flash4{display : none;}  #flash5{display : none;}
+/* Memória de Massa  */
+#memo1{display : none;}  #memo3{display : none;}  #memo4{display : none;}  #memo5{display : none;}
+#memo6{display : none;}  #memo7{display : none;}  #memo8{display : none;}  #memo9{display : none;}  #memo10{display : none;}
+#memo11{display : none;}  #memo12{display : none;}  #memo13{display : none;} #memo14{display : none;} #memo15{display : none;}
+
+/* DMA */
+#dma1{display : none;} #dma3{display : none;}
+/* CS  */
+#cs1{display : none;}
+/* Adress Bus  */
+#ad1{display : none;}  #ad2{display : none;}  #ad3{display : none;}  #ad4{display : none;}  #ad5{display : none;}
+#ad6{display : none;}  #ad7{display : none;}  #ad8{display : none;}  #ad9{display : none;}
+/* Data-Bus */
+#data1{display : none;}  #data2{display : none;} #data4{display : none;}
+#data5{display : none;}  #data6{display : none;} #data7{display : none;}
+/* I5 */
+#i52{display : none;}
+/* I7 */
+#i72{display : none;}
+/* Dual Core */
+#dual2{display : none;}  #dual3{display : none;}  #dual4{display : none;}  #dual5{display : none;}
+#dual6{display : none;}  #dual8{display : none;}  #dual9{display : none;}
+/* Quad Core */
+#quad1{display : none;}  #quad2{display : none;}  #quad3{display : none;}  #quad4{display : none;}  #quad5{display : none;}
+#quad6{display : none;}  #quad7{display : none;}  #quad8{display : none;}  

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Cruzadinha</title>
+    <link rel="stylesheet" href="cruzzadinha.css">
+    <script src="cruzadinha.js"></script>
+</head>
+
+<body>
+    <div id="topo">
+        <h2>Palavras - Cruzadas</h2>
+        <button id="bt_comecar" onclick="comecar()">Começar o Jogo</button>
+        <button id="bt_finalizar" onclick="finalizar()">Finalizar Jogo</button>
+    </div>
+    <br>
+    <div id="banner">
+        <p id="intro">
+            Intruções do Jogo <br>
+            Clique em "Começar o Jogo" para iniciar uma partida <br>
+            Perguntas serão exibidas na parte direita do quadro <br>
+            Insira a sua resposta na caixa de texto e clique em
+            "Verificar" para conferir a sua resposta <br>
+            A partida acaba quando as 16 questões forem respondidas <br>
+        </p>
+    </div>
+    <div id="conteudo">
+        <div id="jogo">
+            <table>
+                <tr id="linha1">
+                    <td class="1" id="vaz"></td>
+                    <td class="2" id="vaz"></td>
+                    <td class="3" id="vaz"></td>
+                    <td class="4" id="vaz"></td>
+                    <td class="5" id="vaz"></td>
+                    <td class="6" id="vaz"></td>
+                    <td class="7" id="vaz">12</td>
+                    <td class="8" id="vaz"></td>
+                    <td class="9" id="vaz">2</td>
+                    <td class="10" id="vaz"></td>
+                    <td class="11" id="vaz"></td>
+                    <td class="12" id="vaz"></td>
+                    <td class="13" id="vaz"></td>
+                    <td class="14" id="vaz"></td>
+                    <td class="15" id="vaz"></td>
+                </tr>
+                <tr id="linha2">
+                    <td class="1" id="vaz"></td>
+                    <td class="2" id="vaz"></td>
+                    <td class="3" id="vaz"></td>
+                    <td class="4" id="vaz"></td>
+                    <td class="5" id="vaz"></td>
+                    <td class="6" id="vaz"></td>
+                    <td class="7"><span id="data1">D</span> </td>
+                    <td class="8" id="vaz"></td>
+                    <td class="9"><span id="ula1">U</span></td>
+                    <td class="10" id="vaz"></td>
+                    <td class="11" id="vaz"></td>
+                    <td class="12" id="vaz"></td>
+                    <td class="13" id="vaz">8</td>
+                </tr>
+                <tr id="linha3">
+                    <td class="1" id="vaz"></td>
+                    <td class="2" id="vaz"></td>
+                    <td class="3" id="vaz">6</td>
+                    <td class="4" id="vaz"></td>
+                    <td class="5" id="vaz">14</td>
+                    <td class="6" id="vaz"></td>
+                    <td class="7"><span id="data2">A</span></td>
+                    <td class="8" id="vaz">4</td>
+                    <td class="9"><span id="ula2"> L</span></td>
+                    <td class="10" id="vaz">15</td>
+                    <td class="11" id="vaz"></td>
+                    <td class="12" id="vaz"></td>
+                    <td class="13"><span id="memo1">M</span> </td>
+                    <td class="14" id="vaz"></td>
+                    <td class="15" id="vaz"></td>
+                </tr>
+                <tr id="linha4">
+                    <td class="1" id="vaz"> 3</td>
+                    <td class="2"><span id="reg1">R</span> </td>
+                    <td class="3"><span id="reg2">E</span></td>
+                    <td class="4"><span id="reg3">G</span></td>
+                    <td class="5"><span id="reg4">I</span></td>
+                    <td class="6"><span id="reg5">S</span></td>
+                    <td class="7"><span id="reg6">T</span></td>
+                    <td class="8"><span id="reg7">R</span></td>
+                    <td class="9"><span id="ula3">A</span></td>
+                    <td class="10"><span id="reg9">D</span></td>
+                    <td class="11"><span id="reg10">O</span></td>
+                    <td class="12"><span id="reg11">R</span></td>
+                    <td class="13"><span id="reg12">E</span></td>
+                    <td class="14"><span id="reg13">S</span></td>
+                </tr>
+                <tr id="linha5">
+                    <td class="1" id="vaz"></td>
+                    <td class="2" id="vaz"></td>
+                    <td class="3"><span id="ep2">P</span></td>
+                    <td class="4" id="vaz"></td>
+                    <td class="5"><span id="i72">7</span></td>
+                    <td class="6" id="vaz"></td>
+                    <td class="7"><span id="data4">A</span></td>
+                    <td class="8"><span id="ram2">A</span></td>
+                    <td class="9" id="vaz"></td>
+                    <td class="10"><span id="dual2">U</span></td>
+                    <td class="11" id="vaz"></td>
+                    <td class="12" id="vaz"></td>
+                    <td class="13"><span id="memo3">M</span></td>
+                    <td class="14" id="vaz"></td>
+                    <td class="15" id="vaz"></td>
+                </tr>
+                <tr id="linha6">
+                    <td class="1" id="vaz"></td>
+                    <td class="2" id="vaz"></td>
+                    <td class="3"><span id="ep3">R</span></td>
+                    <td class="4" id="vaz"></td>
+                    <td class="5" id="vaz"></td>
+                    <td class="6" id="vaz"></td>
+                    <td class="7"><span id="data5">-</span></td>
+                    <td class="8"><span id="ram3">M</span></td>
+                    <td class="9" id="vaz"></td>
+                    <td class="10"><span id="dual3">A</span></td>
+                    <td class="11" id="vaz"></td>
+                    <td class="12" id="vaz"></td>
+                    <td class="13"><span id="memo4">O</span></td>
+                </tr>
+                <tr id="linha7">
+                    <td class="1" id="vaz"></td>
+                    <td class="2" id="vaz"></td>
+                    <td class="3"><span id="ep4">O</span></td>
+                    <td class="4" id="vaz"></td>
+                    <td class="5" id="vaz"></td>
+                    <td class="6" id="vaz"></td>
+                    <td class="7"><span id="data6">B</span></td>
+                    <td class="8" id="vaz"></td>
+                    <td class="9" id="vaz"></td>
+                    <td class="10"><span id="dual4">L</span> </td>
+                    <td class="11" id="vaz"></td>
+                    <td class="12" id="vaz"></td>
+                    <td class="13"><span id="memo5">R</span></td>
+                    <td class="14" id="vaz"></td>
+                    <td class="15" id="vaz"></td>
+                </tr>
+                <tr id="linha8">
+                    <td class="1" id="vaz"></td>
+                    <td class="2" id="vaz"></td>
+                    <td class="3"><span id="ep5">M</span></td>
+                    <td class="4" id="vaz">1</td>
+                    <td class="5"><span id="cpu1">C</span> </td>
+                    <td class="6"><span id="cpu2">P</span></td>
+                    <td class="7"><span id="cpu3">U</span></td>
+                    <td class="8" id="vaz"></td>
+                    <td class="9" id="vaz"></td>
+                    <td class="10"><span id="dual5">-</span></td>
+                    <td class="11" id="vaz"></td>
+                    <td class="12" id="vaz">13</td>
+                    <td class="13"><span id="memo6">I</span></td>
+                    <td class="14"><span id="i52">5</span></td>
+                    <td class="15" id="vaz"></td>
+                </tr>
+                <tr id="linha9">
+                    <td class="1" id="vaz"></td>
+                    <td class="2" id="vaz"></td>
+                    <td class="3" id="vaz"></td>
+                    <td class="4" id="vaz"></td>
+                    <td class="5" id="vaz"></td>
+                    <td class="6" id="vaz"></td>
+                    <td class="7"><span id="data7">S</span></td>
+                    <td class="8" id="vaz"></td>
+                    <td class="9" id="vaz"></td>
+                    <td class="10"><span id="dual6">C</span></td>
+                    <td class="11" id="vaz"></td>
+                    <td class="12" id="vaz"></td>
+                    <td class="13"><span id="memo7">A</span></td>
+                </tr>
+                <tr id="linha10">
+                    <td class="1" id="vaz"></td>
+                    <td class="2" id="vaz"></td>
+                    <td class="3" id="vaz"></td>
+                    <td class="4" id="vaz"></td>
+                    <td class="5" id="vaz"></td>
+                    <td class="6" id="vaz"></td>
+                    <td class="7" id="vaz"></td>
+                    <td class="8" id="vaz">5</td>
+                    <td class="9"><span id="rom1">R</span></td>
+                    <td class="10"><span id="rom2">O</span></td>
+                    <td class="11"><span id="rom3">M</span></td>
+                    <td class="12" id="vaz"></td>
+                    <td class="13"><span id="memo8">-</span></td>
+                </tr>
+                <tr id="linha11">
+                    <td class="1" id="vaz"></td>
+                    <td class="2" id="vaz"></td>
+                    <td class="3" id="vaz"></td>
+                    <td class="4" id="vaz"></td>
+                    <td class="5" id="vaz"></td>
+                    <td class="6" id="vaz"></td>
+                    <td class="7" id="vaz"></td>
+                    <td class="8" id="vaz"></td>
+                    <td class="9" id="vaz"></td>
+                    <td class="10"><span id="dual8">R</span></td>
+                    <td class="11" id="vaz"></td>
+                    <td class="12" id="vaz"></td>
+                    <td class="13"><span id="memo9">D</span></td>
+                </tr>
+                <tr id="linha12">
+                    <td class="1" id="vaz">16</td>
+                    <td class="2"><span id="quad1">Q</span></td>
+                    <td class="3"><span id="quad2">U</span></td>
+                    <td class="4"><span id="quad3">A</span></td>
+                    <td class="5"><span id="quad4">D</span></td>
+                    <td class="6"><span id="quad5">-</span></td>
+                    <td class="7"><span id="quad6">C</span></td>
+                    <td class="8"><span id="quad7">O</span></td>
+                    <td class="9"><span id="quad8">R</span></td>
+                    <td class="10"><span id="dual9">E</span></td>
+                    <td class="11" id="vaz"></td>
+                    <td class="12" id="vaz"></td>
+                    <td class="13"><span id="memo10">E</span></td>
+                    <td class="14" id="vaz"></td>
+                    <td class="15" id="vaz"></td>
+                </tr>
+                <tr id="linha13">
+                    <td class="1" id="vaz"></td>
+                    <td class="2" id="vaz"></td>
+                    <td class="3" id="vaz"></td>
+                    <td class="4" id="vaz"></td>
+                    <td class="5" id="vaz"></td>
+                    <td class="6" id="vaz"></td>
+                    <td class="7" id="vaz"></td>
+                    <td class="8" id="vaz"></td>
+                    <td class="9" id="vaz"></td>
+                    <td class="10" id="vaz"></td>
+                    <td class="11" id="vaz"></td>
+                    <td class="12" id="vaz"></td>
+                    <td class="13"><span id="memo11">-</span></td>
+                    <td class="14" id="vaz"></td>
+                    <td class="15" id="vaz"></td>
+                </tr>
+                <tr id="linha14">
+                    <td class="1" id="vaz"></td>
+                    <td class="2" id="vaz"></td>
+                    <td class="3" id="vaz"></td>
+                    <td class="4" id="vaz"></td>
+                    <td class="5" id="vaz"></td>
+                    <td class="6" id="vaz"></td>
+                    <td class="7" id="vaz"></td>
+                    <td class="8" id="vaz"></td>
+                    <td class="9" id="vaz"></td>
+                    <td class="10" id="vaz"></td>
+                    <td class="11" id="vaz">9</td>
+                    <td class="12"><span id="dma1">D</span></td>
+                    <td class="13"><span id="memo12">M</span></td>
+                    <td class="14"><span id="dma3">A</span></td>
+                    <td class="15" id="vaz"></td>
+                </tr>
+                <tr id="linha15">
+                    <td class="1" id="vaz"></td>
+                    <td class="2" id="vaz"></td>
+                    <td class="3" id="vaz"></td>
+                    <td class="4" id="vaz"></td>
+                    <td class="5" id="vaz"></td>
+                    <td class="6" id="vaz"></td>
+                    <td class="7" id="vaz"></td>
+                    <td class="8" id="vaz"></td>
+                    <td class="9" id="vaz"></td>
+                    <td class="10" id="vaz"></td>
+                    <td class="11" id="vaz"></td>
+                    <td class="12" id="vaz"></td>
+                    <td class="13"><span id="memo13">A</span></td>
+                    <td class="14" id="vaz"></td>
+                    <td class="15" id="vaz"></td>
+                </tr>
+                <tr id="linha16">
+                    <td class="1" id="vaz"></td>
+                    <td class="2" id="vaz"></td>
+                    <td class="3" id="vaz"></td>
+                    <td class="4" id="vaz"></td>
+                    <td class="5" id="vaz"></td>
+                    <td class="6" id="vaz"></td>
+                    <td class="7" id="vaz"></td>
+                    <td class="8" id="vaz"></td>
+                    <td class="9" id="vaz"></td>
+                    <td class="10" id="vaz"></td>
+                    <td class="11" id="vaz">10</td>
+                    <td class="12"><span id="cs1">C</span></td>
+                    <td class="13"><span id="memo14">S</span></td>
+                    <td class="14" id="vaz"></td>
+                    <td class="15" id="vaz"></td>
+                </tr>
+                <tr id="linha17">
+                    <td class="1" id="vaz"></td>
+                    <td class="2" id="vaz"></td>
+                    <td class="3" id="vaz">11</td>
+                    <td class="4"><span id="ad1">A</span></td>
+                    <td class="5"><span id="ad2">D</span></td>
+                    <td class="6"><span id="ad3">R</span></td>
+                    <td class="7"><span id="ad4">E</span></td>
+                    <td class="8"><span id="ad5">S</span></td>
+                    <td class="9"><span id="ad6">S</span></td>
+                    <td class="10"><span id="ad7">-</span></td>
+                    <td class="11"><span id="ad8">B</span></td>
+                    <td class="12"><span id="ad9">U</span></td>
+                    <td class="13"><span id="memo15">S</span></td>
+                    <td class="14" id="vaz"></td>
+                    <td class="15" id="vaz"></td>
+                </tr>
+                <tr id="linha18">
+                    <td class="1" id="vaz"></td>
+                    <td class="2" id="vaz"></td>
+                    <td class="3" id="vaz"></td>
+                    <td class="4" id="vaz"></td>
+                    <td class="5" id="vaz"></td>
+                    <td class="6" id="vaz"></td>
+                    <td class="7" id="vaz"></td>
+                    <td class="8" id="vaz"></td>
+                    <td class="9" id="vaz"></td>
+                    <td class="10" id="vaz">7</td>
+                    <td class="11"><span id="flash1">F</span></td>
+                    <td class="12"><span id="flash2">L</span></td>
+                    <td class="13"><span id="flash3">A</span></td>
+                    <td class="14"><span id="flash4">S</span></td>
+                    <td class="15"><span id="flash5">H</span></td>
+                </tr>
+            </table>
+            <br>
+            <div id="div_placar">
+                <p id="pontuacao"> Placar:
+                    <span id="contador1">0</span>
+                </p>
+            </div>
+        </div>
+        <h3><span class="numeracao">1.</span>Qual é a sigla para Central Process Unit?<br>
+            <span class="numeracao">2.</span>Um circuto digital que realiza operações lógicas e aritméticas. Qual é o
+            nome deste componente?<br>
+            <span class="numeracao">3.</span>Tipo de memória que se encontra no topo da hierarquia de memória<br>
+            <span class="numeracao">4.</span>Tipo de memória volátil que tem como nome Random Acess Memory. Qual é a
+            sigla deste componente?<br>
+            <span class="numeracao">5.</span>Tipo de memória não volátil que oferece dados apenas para leitura<br>
+            <span class="numeracao">6.</span>Tipo de memória não volátil que precisa ter seu chip exposto a luz
+            ultravioleta para apagar seu conteúdo<br>
+            <span class="numeracao">7.</span>Tipo particular de EEPROM que mantém as informações armazenadas sem a
+            necessidade de uma fonte de energia
+            elétrica'<br>
+            <span class="numeracao">8.</span>Tipo de memória que precisa ter seu conteúdo copiado na RAM para poder ser
+            executado pela CPU<br>
+            <span class="numeracao">9.</span>Permite que periféricos acessem diretamente a RAM sem ocupar
+            processamento<br>
+            <span class="numeracao">10.</span>Também conhecido como Slave Select (SS). Usado para selecionar um ou um
+            conjunto de circuitos que estão
+            conectados no computador<br>
+            <span class="numeracao">11.</span>Grupo de linhas ou trilhas usadas para se referir a um endereço físico na
+            memória. O número de trilhas
+            determina a quantidade de endereços na memória física<br>
+            <span class="numeracao">12.</span>Também chamado de Memory Bus. É responsável para carregar os dados.<br>
+            <span class="numeracao">13.</span>Modelo de processador desenvolvido pela Intel qu teve sua primeira versão
+            lançada em setembro de 2009<br>
+            <span class="numeracao">14.</span>Modelo de processador desenvolvido pela Intel qu teve sua primeira versão
+            lançada em novembro de 2008<br>
+            <span class="numeracao">15.</span>Tipo de processador que possui dois processadores ou melhor dizendo ‘dois
+            centros<br> núcleos ou cores de
+            execução‘ no mesmo circuito integrado. Cada core tem sua própria memória cash e controlador o que permite
+            que funcione mais efetivamente do que um processador single<br>
+            <span class="numeracao">16.</span>Segue o mesmo princípio de um dual-core mas agora em teoria tem o dobro da
+            capacidade de processamento
+        </h3>
+    </div>
+    <div id="questoes">
+        <input type="text" id= "questao1" placeholder="Coloque sua resposta"><br><br>
+
+        <button id= "bt_resposta" onclick="verificar()">Verificar</button>
+        
+    </div>
+</body>
+</html>
