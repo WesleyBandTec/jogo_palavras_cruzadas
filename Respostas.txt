@@ -1,0 +1,16 @@
+1'CPU', 
+2'ULA', '
+3 REGISTRADORES', 
+4'RAM', 
+5'ROM', 
+6'EPROM', 
+7'FLASH', 
+8'MEMORIA DE MASSA', 
+9'DMA', 
+10'CS', 
+11'Adress Bus', 
+12'Data Bus', 
+13'I5', 
+14'I7', 
+15'Dual Core', 
+16'Quad Core'
