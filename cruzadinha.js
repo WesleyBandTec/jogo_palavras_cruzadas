@@ -37,6 +37,7 @@ function verificar() {
         cpu3.style.display = 'block'
         contador++
         contador1.innerHTML = `${contador}`
+        questao1.value = ""
     }
     // Questao 2
     if (result1 == "ULA") {
@@ -45,6 +46,7 @@ function verificar() {
         ula3.style.display = 'block'
         contador++
         contador1.innerHTML = `${contador}`
+        questao1.value = ""
     }
     // Questao 3
     if (result1 == "REGISTRADORES") {
@@ -62,6 +64,7 @@ function verificar() {
         reg13.style.display = 'block'
         contador++
         contador1.value = contador
+        questao1.value = ""
     }
     // Questao 4
     if (result1 == "RAM") {
@@ -69,6 +72,7 @@ function verificar() {
         ram3.style.display = 'block'
         contador++
         contador1.innerHTML = `${contador}`
+        questao1.value = ""
     }
 
     // Questao 5
@@ -78,6 +82,7 @@ function verificar() {
         rom3.style.display = 'block'
         contador++
         contador1.innerHTML = `${contador}`
+        questao1.value = ""
     }
     // Questao 6
     if (result1 == "EPROM") {
@@ -87,6 +92,7 @@ function verificar() {
         ep5.style.display = 'block'
         contador++
         contador1.innerHTML = `${contador}`
+        questao1.value = ""
     }
     // Questao 7
     if (result1 == "FLASH") {
@@ -97,6 +103,7 @@ function verificar() {
         flash5.style.display = 'block'
         contador++
         contador1.innerHTML = `${contador}`
+        questao1.value = ""
     }
     // Questao 8
     if (result1 == "MEMORIA DE MASSA") {
@@ -116,6 +123,7 @@ function verificar() {
         memo15.style.display = 'block'
         contador++
         contador1.innerHTML = `${contador}`
+        questao1.value = ""
     }
     // Questao 9
     if (result1 == "DMA") {
@@ -123,12 +131,14 @@ function verificar() {
         dma3.style.display = 'block'
         contador++
         contador1.innerHTML = `${contador}`
+        questao1.value = ""
     }
     // Questao 10
     if (result1 == "CS") {
         cs1.style.display = 'block'
         contador++
         contador1.innerHTML = `${contador}`
+        questao1.value = ""
     }
     // Questao 11
     if (result1 == "ADRESS BUS") {
@@ -143,6 +153,7 @@ function verificar() {
         ad9.style.display = 'block'
         contador++
         contador1.innerHTML = `${contador}`
+        questao1.value = ""
     }
     // Questao 12
     if (result1 == "DATA BUS") {
@@ -154,18 +165,21 @@ function verificar() {
         data7.style.display = 'block'
         contador++
         contador1.innerHTML = `${contador}`
+        questao1.value = ""
     }
     // Questao 13
     if (result1 == "I5") {
         i52.style.display = 'block'
         contador++
         contador1.innerHTML = `${contador}`
+        questao1.value = ""
     }
     // Questao 14
     if (result1 == "I7") {
         i72.style.display = 'block'
         contador++
         contador1.innerHTML = `${contador}`
+        questao1.value = ""
     }
     // Questao 15
     if (result1 == "DUAL CORE") {
@@ -178,6 +192,7 @@ function verificar() {
         dual9.style.display = 'block'
         contador++
         contador1.innerHTML = `${contador}`
+        questao1.value = ""
     }
     // Questao 16
     if (result1 == "QUAD CORE") {
@@ -191,5 +206,6 @@ function verificar() {
         quad8.style.display = 'block'
         contador++
         contador1.innerHTML = `${contador}`
+        questao1.value = ""
     }
 }
