@@ -1,5 +1,4 @@
 var contador = 0
-contador1.value = contador
 
 function comecar() {
     alert("Boa Sorte, Se divirta!")
@@ -26,6 +25,7 @@ function finalizar() {
     } else {
         alert("Que pena... não Conseguiu")
     }
+    window.location.href = "cruzadinha.html";
 }
 function verificar() {
     var q1 = questao1.value.toUpperCase()
@@ -66,7 +66,7 @@ function verificar() {
     // Questao 4
     if (result1 == "RAM") {
         ram2.style.display = 'block'
-        ram3.style.display = 'block';
+        ram3.style.display = 'block'
         contador++
         contador1.innerHTML = `${contador}`
     }
